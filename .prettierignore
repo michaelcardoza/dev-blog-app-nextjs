@@ -1,0 +1,11 @@
+.idea
+.next
+.swc
+.local
+.public
+.maizzle
+node_modules
+__tests__
+mails
+public
+package-lock.json

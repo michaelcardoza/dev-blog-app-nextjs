@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    @apply bg-primary-600 text-white;
+  }
+
+  body {
+    @apply bg-white;
+  }
+}
+
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.md-editor-preview {
+  @apply flex w-full flex-col gap-y-8;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold;
+  }
+
+  h5,
+  h6,
+  p {
+    @apply font-normal;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl
+  }
+
+  h5 {
+    @apply text-lg md:text-xl
+  }
+
+  h6 {
+    @apply text-base md:text-lg
+  }
+
+  p {
+    @apply text-base text-neutral-600;
+  }
+
+  ul {
+    @apply list-disc pl-4;
+
+    li {
+    }
+  }
+}
